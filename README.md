@@ -3,6 +3,10 @@
 This repository contains my solutions to exercises from the [Containerization Workshop](https://github.com/thealcodingclub/Containerization-Workshop) organized by **The AL Coding Club**.
 
 ---
+## Certificate
+I successfully completed the Containerization Workshop and received a certificate from The AL Coding Club.
+<img width="790" alt="Docker Certificate" src="Piyush Shiv.png">
+
 
 ## Docker Concepts
 
@@ -69,7 +73,7 @@ docker rm <container_id>
 docker rmi <image_id>
 ```
 
-Container Lifecycle
+## Container Lifecycle
 ```docker
 # Create (but don’t start)
 docker create
@@ -87,7 +91,7 @@ docker stop
 docker rm
 ```
 
-Dockerfile Basics
+## Dockerfile Basics
 ```docker
 # Base Image
 FROM node:14-alpine
@@ -111,7 +115,7 @@ EXPOSE 3000
 CMD ["npm", "start"]
 ```
 
-Best Practices:
+## Best Practices:
 
 1. Use specific base image tags
 
@@ -121,7 +125,7 @@ Best Practices:
 
 4. Security considerations
 
-Building & Pushing Docker Images
+## Building & Pushing Docker Images
 ```docker
 # Build image
 docker build -t myapp:1.0 .
@@ -135,7 +139,7 @@ docker push username/myapp:1.0
 # Build using a custom Dockerfile
 docker build -f Dockerfile.prod -t myapp:prod .
 ```
-Docker Compose Commands
+## Docker Compose Commands
 ```docker
 # Start services
 docker-compose up -d
